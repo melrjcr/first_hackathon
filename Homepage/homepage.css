@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Griffy);
+
+body 
+{
+background-image:url("background1.png");
+background-repeat: no-repeat;
+background-size:contain;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+}
+.hearder {
+    grid-area:header ;
+    font-family: Verdana;
+    color: blue;
+    text-shadow: 5px 5px 10px black;
+    background-image:url("background1.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.main {
+    grid-area: main;   
+    text-align: center; 
+    justify-content: center;
+}
+.h_1 {
+    font-family:'Griffy';
+    color: black;
+    text-shadow: 5px 5px 10px purple;
+    font-size: 80px;
+}
+.h_2{
+    color: white;
+}
+
+/* main for instructions */
+.instruccions {
+    grid-area: main;
+    border: solid 10px;
+    height: 500px;
+    width: 800px;
+}
+
+
+
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+/* Copy Right Footer */
+.footer-copyright {	grid-area: footer ; background: #222;	padding: 5px 0; }
+.footer-copyright .logo {    display: inherit;}
+.footer-copyright p { text-size-adjust:auto  ;	color: #969696;	margin: 2px 0 0}
+
