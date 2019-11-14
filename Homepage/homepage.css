@@ -44,18 +44,21 @@ height: 100vh;
 }
 
 .main {
-    grid-area: main;   
-    text-align: center; 
     justify-content: center;
     /*border: 1px solid red;*/
-    margin-bottom: 150px;
-    
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
 }
 .h_1 {
     font-family:'Griffy';
     color: black;
     text-shadow: 5px 5px 10px purple;
     font-size: 80px;
+    animation-duration: 2s;
+    /*animation-iteration-count: infinite;*/
 
 }
 .h_2{

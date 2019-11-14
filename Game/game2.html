@@ -2,85 +2,59 @@
 <html>
 
 <head>
-    <Title>Game</Title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="game.css">
+  <Title>Game</Title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="game.css">
+  <script type="text/javascript" src="game.js"></script>
 
 </head>
 
 <body>
-    <div class="container">
-        <!--Header -->
-        <header class="header">
-            <!--Navigation Panel-->
-            <nav class="fixed-top navbar-light bg-transparent my-bg-transparent">
-                <div class="d-flex bd-highlight p-2">
-                    <div class="p-2"><a href="homepage.html">Home</a></div>
-                    <div class="p-2 "><a href="Instruc">Instructions</a></div>
-                    <div class="p-2"><a href="instructions.html">Learn to tell Time</a></div>
-                    <div class="p-2 "><a href="#Contact">about us</a></div>
-                </div>
-            </nav>
-        </header>
-        <div class="game_header col-md-12">
-            <h2 class="h_1"> Let's rescue time!</h2>
-            <p>
-                <h6>The queen has request from you to recue time ! Time was stolen long ago by the Mad-Hatter to spend in tea partys and fancy hats. Only if you proof to know how to tell time the Mad-hatter will let you have it.
-                </p>
-                <p>Answer correctly as many of the following questions and get time back!</p>
-                <p>Good luck!</h6>
-                </p>
-            </div>
+  <!--Header -->
+  <header class="header">
+      <!--Navigation Panel-->
+      <nav class="fixed-top navbar-light bg-transparent my-bg-transparent">
+        <div class="d-flex bd-highlight p-2">
+          <div class="p-2"><a href="homepage.html">Home</a></div>
+          <!-- <div class="p-2 "><a href="Instruc">Instructions</a></div> -->
+          <div class="p-2"><a href="instructions.html">Learn to tell Time</a></div>
+          <!-- <div class="p-2 "><a href="#Contact">about us</a></div> -->
         </div>
-        <!-- <div class="row game_main"> -->
-            <div class="card" style="width: 10rem;">
-                <img src="3.00.png" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the ard's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-                    <!-- <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div> -->
-                </div>
-                <div class="card" style="width: 10rem;">
-                    <img src="4.45.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the ard's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                        <!-- <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div> -->
-                    </div>
-                    <div class="card" style="width: 10rem;">
-                        <img src="9.25.png" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the ard's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                        <!-- <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div> -->
-                    </div>
-                </div>
+      </nav>
+    </header>
+
+  <div class="container">
+    <div>
+    
+    <div class="grid-item game_header col-md-12">
+      <h2 class="h_1"> Let's rescue time!</h2>
+              <img src="red_queen.png" class="queen">
+
+      <p>
+        <h6>The Red Queen has request from you to recue time ! Time was stolen long ago by the Mad-Hatter to spend in tea partys and fancy hats. Only if you proof to know how to tell time the Mad-hatter will let you have it.</h6>
+        </p>
+        <p><h6>Answer correctly as many of the following questions and get time back!<h6></p>
+        <p><h6>Good luck!</h6></p>
+      </div>
+    </div>
+    <!-- <div class="row game_main"> -->
+      <div class="grid-item row game_main">
+       <div class="card col-md-4" style="width: 40rem;">
+         <img id= 'myimage'src="3.00.png" class="card_im">
+         <div id = "card" class="card-body">
+           <p class="card-text">According to the clock above what is the time?</p>
+         </div>
+         <form id ='frm' name="myForm" onsubmit='return validateForm(this)' action ='' >
+                       <input type = "checkbox" id='1' name = "1" value = 'false'>A. 4:30<br>
+                       <input type = "checkbox" id='2' name = "2" value = 'true' >B. 3:00 <br>
+                       <input type = "checkbox" id='3' name = "3" value="false" >C. 9:50 <br></br>
+                       <input class = "center btn btn-primary" id = 'btn' type="submit" value='Submit'>
+                   </form>
+       </div>
+     </div>
+         
+
+ </div>
+ <!-- <script src="game.js"></script> -->
 </body>
 </html>
