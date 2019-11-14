@@ -4,8 +4,25 @@ body
 {
 background-image:url("background1.png");
 background-repeat: no-repeat;
-background-size:contain;
+/*background-size:contain;*/
+
+height: 100vh;
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.my-bg-transparent {
+    background-color: rgba(148,0,211,0.2)!important;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -30,15 +47,21 @@ background-size:contain;
     grid-area: main;   
     text-align: center; 
     justify-content: center;
+    /*border: 1px solid red;*/
+    margin-bottom: 150px;
+    
 }
 .h_1 {
     font-family:'Griffy';
     color: black;
     text-shadow: 5px 5px 10px purple;
     font-size: 80px;
+
 }
 .h_2{
-    color: white;
+    color: #381356;
+    text-shadow: : 5px 5px black;
+    font-weight: bold;
 }
 
 /* main for instructions */
